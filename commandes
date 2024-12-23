@@ -1,0 +1,8 @@
+SELECT * from Customer;
+select SaleQuantity*SaleUnitPrice from sales ORDER BY SaleQuantity*SaleUnitPrice DESC;
+select EmployeeID from sales;
+ALTER TABLE customer ADD CustomerEmail VARCHAR(50);
+update customer SET CustomerEmail = 'email' where CustomerID = 1;
+DELETE FROM customer where CustomerCity = 'newyork';
+SELECT * FROM sales WHERE saledate >= CURDATE() - INTERVAL 30 DAY;
+select SUM(SaleQuantity*SaleUnitPrice) from sales;
